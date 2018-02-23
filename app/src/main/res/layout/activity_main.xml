@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/popBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="인기 앱"/>
+        <Button
+            android:id="@+id/freeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/popBtn"
+            android:text="인기무료 앱"/>
+        <Button
+            android:id="@+id/paidBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/freeBtn"
+            android:text="인기유료 앱"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/bottomFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+    </RelativeLayout>
+</RelativeLayout>
